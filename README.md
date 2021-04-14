@@ -3,3 +3,5 @@ Build Status and Link - [![Build Status](https://travis-ci.org/TechPrimers/travi
 Quality Gate Status - [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=edin0_Groupe-1-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=edin0_Groupe-1-test)
 
 Coverage Status - [![Coverage (Sonar)](https://sonarcloud.io/api/project_badges/measure?project=edin0_Groupe-1-test&metric=coverage)](https://sonarcloud.io/dashboard?id=edin0_Groupe-1-test)
+
+Bugs - [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=edin0_Groupe-1-test)
