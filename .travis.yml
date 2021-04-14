@@ -21,6 +21,7 @@ jobs:
   include:
     - stage: Test
       script: ./mvnw clean test
+      script: sonar-scanner
 
 notification:
   email: edin.sljmn@gmail.com
