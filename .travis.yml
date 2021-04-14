@@ -2,6 +2,16 @@
 language: java
 jdk:
   - openjdk11
+services:
+- docker
+addons:
+  snaps:
+    - name: microk8s
+      confinement: classic
+  sonarcloud:
+    organization: pinfo-2020
+    token:
+    secure: "Pp014hIuvulDGkGxZNIY9lO0RuJfBVYjJiW3mvW9A4SdUffl8sIa2VH8uDltSmQN9+XE9ExLkiKK/QOntnWry1yqUyCwk63UxTemwzppMKKTkiJfc+15H5qfwANCNlk4/Az/G6asiaVM5LmASOS7uAt/28qWFhXCT/pv61vp9Ojjg0669hbCkoM7z4oEKd3WoJCxJwDm6AQBtUKU20VLhEhBPPH8FbEZNnqsmO2PvWFAxU/gZ9qgrCKBaD8lNtT8pl5lzhUBLYz/edIO+a3rX83GZE3/SSx33OCvhMaYMATx8qcZaRrYjppvWlrH5IquuTw3O9VUdQlLebyuEE0E1fExNmIQnqWoucZCByOCEixatPEbGY3f1ywgpsqBps5nzKEJfUxE1uOP1ZUK+ScbjNIgdOtojrIskTk5K0F6PyBNI7KoyLH1Vva6wrXt3vn47WcPUOReoEZuquiaitewwuQEuYvrdHP1EPo2CKFqsab5TJRZZg/tRdmmOGAu77hUn60XjCJzAGBtwsK7VdnSfutV+8WANZXiKRxPRBmUy2y2pJtKWNP4zfxHY8YnAwlU1b3BSE/YoOb6Kva7YNGlW6Aa3xUwJyMe21EPfwe4B96lvpQp7MolvXF0RXNPpzFNsMTnVshvbcbI2MkKlksmkImrW3q4VwCOwHbnywLxCjQ="
 
 script: ./mvnw clean install
 
