@@ -3,13 +3,13 @@ language: java
 jdk:
   - openjdk11
 
-script: ./mvn clean install
+script: ./mvnw clean install
 
 
 jobs:
   include:
     - stage: Test
-      script: ./mvn clean test
+      script: ./mvnw clean test
 
 notification:
   email: edin.sljmn@gmail.com
