@@ -5,6 +5,9 @@ language: python
 env:
   - NODE_VERSION="12.13.1"
 
+services:
+  - docker
+
 jdk:
   - openjdk11
 
@@ -39,6 +42,11 @@ jobs:
       - npm install
       - npm update
       - npm run-script build --prod
+      - docker build -t unige/web-ui .
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin      
+      - docker tag unige/web-ui edin0/web-ui:latest      
+      - docker push edin0/web-ui:latest
+
     - stage: Test
       script: ./mvnw clean test
 
